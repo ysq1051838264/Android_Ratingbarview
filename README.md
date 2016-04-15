@@ -1,6 +1,6 @@
-# Android_ratingbarview
+# Android_Ratingbarview
 ###### a RatingBarView and you can set Image and count
-###### 一个评分控件，可以设置图片和个数,并且总体评价可以为folat
+###### 两个自定义组成的评分控件，可以设置图片和个数,并且总体评价可以为folat
 
 ![image](https://github.com/ysq1051838264/Android_ratingbarview/blob/master/1.jpg)
 ### Usage
