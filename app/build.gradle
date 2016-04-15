@@ -5,7 +5,7 @@ android {
     buildToolsVersion "21.1.2"
 
     defaultConfig {
-        applicationId "com.bao.android_ratingbarview"
+        applicationId "com.ysq.android_ratingbarview"
         minSdkVersion 14
         targetSdkVersion 21
         versionCode 1
