@@ -1,12 +1,12 @@
-# Android_custom_ratingbarview
-###### a custom RatingBarView with Animation and you can set Image and count
+# Android_ratingbarview
+###### a RatingBarView and you can set Image and count
 ###### 一个评分控件，可以设置图片和个数,并且总体评价可以为folat
 
 ### Usage
 
 #### In XML  Directly
 
-    <com.bao.android_custom_ratingbarview.RatingBarView
+    <com.ysq.android_ratingbarview.RatingBarView
         android:id="@+id/starView"
         bao:starImageSize = "22dp"
         bao:starCount = "7"
@@ -15,7 +15,7 @@
         android:layout_centerInParent="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-    </com.bao.android_custom_ratingbarview.RatingBarView>
+    </com.ysq.android_ratingbarview.RatingBarView>
     
 #### In Java Code
 
