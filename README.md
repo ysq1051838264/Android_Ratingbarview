@@ -1,6 +1,6 @@
 # Android_custom_ratingbarview
 ###### a custom RatingBarView with Animation and you can set Image and count
-###### 一个带有动画的评分控件，可以设置图片和个数
+###### 一个评分控件，可以设置图片和个数,并且总体评价可以为folat
 
 ### Usage
 
