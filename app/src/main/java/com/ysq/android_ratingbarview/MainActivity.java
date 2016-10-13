@@ -8,6 +8,11 @@ import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
+
+    int oneScore = 0;
+    int twoScore = 0;
+    int threeScore = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +29,7 @@ public class MainActivity extends ActionBarActivity {
 
         //you can set up view here or in XML
         ratingBarView.setStarCount(5);
-        ratingBarView.setStarEmptyDrawable(new BitmapDrawable(BitmapFactory.decodeResource(getResources(),R.drawable.ic_star_empty)));
+        ratingBarView.setStarEmptyDrawable(new BitmapDrawable(BitmapFactory.decodeResource(getResources(), R.drawable.ic_star_empty)));
         ratingBarView.setStarFillDrawable(new BitmapDrawable(BitmapFactory.decodeResource(getResources(), R.drawable.ic_star_fill)));
         ratingBarView.setStarImageSize(40);
 
@@ -33,6 +38,7 @@ public class MainActivity extends ActionBarActivity {
         ratingBarView.setOnRatingListener(new RatingBarView.OnRatingListener() {
             @Override
             public void onRating(Object bindObject, int RatingScore) {
+                oneScore = RatingScore;
                 Toast.makeText(MainActivity.this, "bindObject : " + RatingScore, Toast.LENGTH_SHORT).show();
             }
         });
@@ -40,6 +46,7 @@ public class MainActivity extends ActionBarActivity {
         ratingBarView2.setOnRatingListener(new RatingBarView.OnRatingListener() {
             @Override
             public void onRating(Object bindObject, int RatingScore) {
+                twoScore = RatingScore;
                 Toast.makeText(MainActivity.this, "bindObject : " + RatingScore, Toast.LENGTH_SHORT).show();
             }
         });
@@ -47,12 +54,13 @@ public class MainActivity extends ActionBarActivity {
         ratingBarView3.setOnRatingListener(new RatingBarView.OnRatingListener() {
             @Override
             public void onRating(Object bindObject, int RatingScore) {
+                threeScore = RatingScore;
                 Toast.makeText(MainActivity.this, "bindObject : " + RatingScore, Toast.LENGTH_SHORT).show();
             }
         });
 
 
-        starView.setScore(5.5f);
+        starView.setScore((oneScore + twoScore + threeScore) / 3);
 
     }
 

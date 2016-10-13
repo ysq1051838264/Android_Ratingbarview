@@ -1,42 +1,47 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              xmlns:bao="http://schemas.android.com/apk/res-auto"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              tools:context=".MainActivity">
+    xmlns:bao="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <com.ysq.android_ratingbarview.RatingBarView
-            android:id="@+id/starView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-    </com.ysq.android_ratingbarview.RatingBarView>
+        android:id="@+id/starView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        bao:starCount="5"
+        bao:starEmpty="@drawable/ic_star_empty"
+        bao:starFill="@drawable/ic_star_fill"
+        bao:starImageSize="22dp"/>
 
     <com.ysq.android_ratingbarview.RatingBarView
-            android:id="@+id/starTwoView"
-            bao:starImageSize="22dp"
-            bao:starCount="5"
-            bao:starEmpty="@drawable/ic_star_empty"
-            bao:starFill="@drawable/ic_star_fill"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-    </com.ysq.android_ratingbarview.RatingBarView>
+        android:id="@+id/starTwoView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        bao:starCount="5"
+        bao:starEmpty="@drawable/ic_star_empty"
+        bao:starFill="@drawable/ic_star_fill"
+        bao:starImageSize="22dp"/>
 
     <com.ysq.android_ratingbarview.RatingBarView
-            android:id="@+id/starThreeView"
-            bao:starImageSize="22dp"
-            bao:starCount="5"
-            bao:starEmpty="@drawable/ic_star_empty"
-            bao:starFill="@drawable/ic_star_fill"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-    </com.ysq.android_ratingbarview.RatingBarView>
+        android:id="@+id/starThreeView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        bao:starCount="5"
+        android:gravity="center"
+        bao:starEmpty="@drawable/ic_star_empty"
+        bao:starFill="@drawable/ic_star_fill"
+        bao:starImageSize="22dp"/>
 
     <com.ysq.android_ratingbarview.ExpertStarView
-            android:id="@+id/expertStarView"
-            android:layout_width="70dp"
-            android:layout_height="13dp"
-            android:layout_gravity="left"
-            android:layout_marginTop="6dp"/>
+        android:id="@+id/expertStarView"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:layout_marginTop="6dp" />
 
 </LinearLayout>
